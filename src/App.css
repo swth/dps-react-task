@@ -1,0 +1,116 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.logo {
+	height: 6em;
+	padding: 1.5em;
+	will-change: filter;
+	transition: filter 300ms;
+}
+.logo:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+	filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	a:nth-of-type(2) .logo {
+		animation: logo-spin infinite 20s linear;
+	}
+}
+
+.card {
+	padding: 2em;
+}
+
+.home-card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	border: 2px solid black;
+    border-radius: 25px;
+    padding: 25px 0px;
+}
+
+.read-the-docs {
+	color: #888;
+}
+
+
+.table{
+	width:100%;
+	border-collapse: collapse;
+	font-family: Bradley Hand, cursive;
+}
+
+th, td{
+	text-align: left;
+}
+th{
+	padding: 20px 0px;
+}
+
+.user-result{
+	border: 2px solid black;
+    border-radius: 25px;
+    margin: 0px 30px;
+}
+tr:first-child{
+	border-bottom: 2px solid black;
+}
+td:first-child, th:first-child{
+	padding-left: 1em;
+}
+td {
+    padding: 10px 0px;
+}
+.col {
+	margin: 0px 30px;
+	@media screen and (min-width:767px){
+		float: left;
+    	width: 11em;
+	}
+}
+
+label {
+    float: left;
+    font-weight: bold;
+    font-family: Bradley Hand, cursive;
+}
+#search-text, #city{
+	background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.checkbox-highlight{
+		padding-top: 30px;
+		display: inline-block;
+		width: 70%;
+		text-align: left;
+}
+
+#checkbox{
+	display: inline-block;
+    width: 25%;
+    transform: scale(3);
+    margin-top: 50px;
+
+	@media screen and (max-width:767px){
+		margin-top: 35px;
+	}
+}
